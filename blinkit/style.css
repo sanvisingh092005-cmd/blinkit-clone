@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.logo{
+    background-color: beige;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    
+}
+.box input{
+             width: 150%;
+            height: 10%;
+            border: none;
+            padding: 0 10px;
+            border-radius: 5px; 
+        }
+#login-btn{
+    padding: 10px 20px;
+    background-color: black;
+    color:white;
+    /* transition:transform 0.5s ease ; */
+}
+#login-btn:hover{
+    background-color: beige;
+    color: black;
+    /* transform:scale(1.2); */
+
+}
+.symbol li{
+    list-style: none;
+    display: contents;
+}
+#cart-btn{
+    /* display: flex; */
+    padding: 7px 20px;
+    /* transition: transform 1s ease; */
+}
+#cart-btn:hover{
+    background-color: black;
+    /* transform: scale(1.2); */
+}
+.banner{
+            
+            padding: 50px 50px;
+            box-sizing: border-box;
+        }
+.banner img{
+            height: 400px;
+  width: 100%;
+  /* object-fit: cover; */
+ border-radius: 10px;
+ }
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px 50px;
+    gap:10px;
+}
+.box{
+    height:100%;
+    min-height: 300px;
+    width:auto;
+}
+.box img{
+    width:100%;
+    height: 200px;
+}
+.blinkit-footer {
+    background-color: #ffffff;
+    padding: 40px 8%;
+    border-top: 1px solid #e0e0e0;
+    color: #333;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Headings configuration */
+.footer-section h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header h3 {
+    margin-bottom: 0;
+}
+
+.see-all {
+    color: #0c831f; /* Blinkit green accent color */
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Grid Layout for vertical columns */
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for Useful Links */
+    gap: 20px;
+}
+
+.categories-grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for Categories */
+}
+
+/* List Formatting */
+.links-grid ul {
+    list-style: none;
+}
+
+.links-grid li {
+    margin-bottom: 12px;
+}
+
+.links-grid a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.links-grid a:hover {
+    color: #000;
+}
+
+/* Copyright line at bottom */
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eeeeee;
+    font-size: 12px;
+    color: #888;
+    line-height: 1.6;
+}
+
+/* Responsive breakpoint for smaller screens */
+@media (max-width: 768px) {
+    .links-grid, .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .links-grid, .categories-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
